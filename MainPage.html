@@ -21,29 +21,78 @@
         max-height: 20%;
         border: 2px solid black;
     }
-    p {
+    h1 {
       font-size: 40px;
       -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: black;
+    }
+    h2 {
+      -webkit-text-stroke-width: 1.7px;
       -webkit-text-stroke-color: black;
     }
     input {
       border: 0;
       padding: 10px;
       font-size: 18px;
-    }
-    input[type="submit"] {
       background: red;
       color: white;
     }
-      footer{
-          background: black;
-          text-align: center;
-      }
+    
+    footer{
+        background: black;
+        text-align: center;
+    }
+      
+    ul {
+        display: inline;
+        padding: 0px 10px 0px 10px;
+        text-align: center;
+    }
+    
+    a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: red;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    width: 12.5%;
+    }
+      
+    a.button:hover {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: purple;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid black;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    width: 12.5%;
+    }
+    
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
   </style>
 </head>
 <body>
   <img src="images/my_photo.jpg" alt="Avatar">
-  <p>Hi! I'm Karan Shah, a NYC-based aspiring Full-Stack Engineer.</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
+  <h1>Hi! I'm Karan Shah, a NYC-based Aspiring Full-Stack Engineer.</h1>
+  <ul>
+      <li><a href="Projects.html" class="button">My Projects</a></li>
+      <li><a href="#" class="button">Resume</a></li>
+      <li><a href="About_Me.html" class="button">About Me</a></li>
+  </ul>
 </body>

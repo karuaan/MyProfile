@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('images/background_image.webp');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: black;
+      font-family: helvetica;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+      min-width: 10%;
+      min-height: 10%;
+      max-width: 25%;
+      max-height: 25%;
+    }
+    .navbar {
+      padding: 10px;
+      background: rgba(0,0,0,0.85);
+      text-align: center;
+    }
+
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 95%;
+      padding: 10px;
+      margin: 0 auto;
+      border-radius: 10px;
+
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .left_skills {
+        width: 30%;
+        background-color: yellow;
+        color: black;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .right_skills {
+        width: 70%;
+        background-color: cyan;
+        color: blueviolet;
+        text-align: center;
+    }
+
+    .employment_item {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    h2 {
+        border-bottom: solid 1px black;
+        padding-bottom: 7px;
+        text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+        width: 30%;
+      }
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/my_photo.jpg">
+    <h1>About Me</h1>
+    <ul class="navbar">
+        <li><a href="MainPage.html">Home Page</a></li>
+        <li><a href="Projects.html">My Projects</a></li>
+        <li><a href="#">Resume</a></li>
+    </ul>
+  </header>
+  <table>
+        <td class="left_skills">
+           <h2>Details</h2>
+           <label><strong>Email: </strong>karuaan@gmail.com</label> 
+           <h2 style="border-top: 1px solid; padding-top: 4px;">Links</h2>
+           <br>
+           <label><strong>Github: </strong></label>
+           <a href="https://github.com/karuaan" style="color: black;">Github</a>
+           <br>
+           <br>
+           <label><strong>Linkedin: </strong></label> 
+           <a href="https://www.linkedin.com/in/karuaan/" style="color: black;">Linkedin</a>
+           <h2 style="border-top: 1px solid; padding-top: 4px;">Skills</h2>
+           <label><strong>Linux: </strong></label>
+           <progress value="80" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>Python: </strong></label>
+           <progress value="70" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>Analytical Skills: </strong></label>
+           <progress value="60" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>Leadership Skills: </strong></label>
+           <progress value="60" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>Oracle SQL: </strong></label>
+           <progress value="60" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>Amazon Web Services: </strong></label>
+           <progress value="30" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>Microsoft Azure: </strong></label>
+           <progress value="30" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>Java: </strong></label>
+           <progress value="50" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>ReactJS: </strong></label>
+           <progress value="40" max="100"></progress>
+           <br>
+           <br>
+           <label><strong>NodeJS: </strong></label>
+           <progress value="40" max="100"></progress>
+        </td>
+        <td class="right_skills">
+           <h2>My Profile</h2>
+           <p style="text-align: left; padding: 10px;">Accomplished production support analyst who has a strong background and passion for
+            software development. At first, a little weak technically, but make up for it with my hard work
+            and dedication to help improve applications being used by customers. Eager to join a new team
+            of technically driven individuals to help brainstorm and learn new technologies.</p>
+            <h2 style="border-top: 1px solid; padding-top: 4px;">Current Employment</h2>
+            <p>
+                <h4>Technology Analyst at Infosys Limited, New York City</h4>
+                <p style="color:darkcyan">September 2019 — Present</p>
+<strong>Main Client: </strong> UBS Investment Banking | <strong>Work Function: </strong>Production Support for Compliance
+and Monitoring Applications.</p>
+<p class="employment_item">· Developed auto emailing feature for Market Data Quality Application that reduced employee
+workload by an average of 2+ hours per day using Oracle SQL and Unix shell scripting.</p>
+<p class="employment_item">· Supported 160+ internal applications used to generate alerts for many compliance issues such
+as money laundering, insider trading, spoofing and market conduct.</p>
+<p class="employment_item">· Analyzed and consulted developers with tasks and infrastructure issues related to
+applications.</p>
+<p class="employment_item">· Improved the team and process efficiency by implementing 3 new features for job and process
+notifications and Autosys Jobs backup system.</p>
+<br>
+            <h2 style="border-top: 1px solid; padding-top: 4px;">Certifications</h2>
+                    <p class="employment_item">· Microsoft Azure Fundamentals (AZ-900): <a href="https://azurecertificates.blob.core.windows.net/certifications/Microsoft_Certified_Professional_Certificate_AZ_900.pdf" style="color: darkslateblue;">Certification Link</a></p>
+                    <p class="employment_item">· EDX: Machine Learning for Data Science and Analytics: <a href="https://courses.edx.org/certificates/e6de83d45c1f475e917377d6a9376c51" style="color: darkslateblue;">Certification Link</a></p>
+            </ul>
+        </td>
+  </table>
+  <br>
+</body>
