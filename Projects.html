@@ -13,15 +13,29 @@
       font-family: helvetica;
     }
 
-    ul {
+    .navbar {
       background: rgba(0,0,0,0.75);
       padding: 10px;
       margin: 0px;
     }
 
-    li {
+    .navlinks {
       display: inline;
       padding: 0px 10px 0px 10px;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    ol {
+        text-align: center;
+        list-style: none;
+        border-bottom: 1px solid;
+    }
+
+    label {
+        border-bottom: 1px solid;
     }
 
     article {
@@ -59,32 +73,77 @@
         padding: 0;
         margin: 0;
     }
+
+    a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: red;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    width: 12.5%;
+    }
+
+    a.button:hover {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: purple;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid black;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: black;
+    width: 12.5%;
+    }
+      
   </style>
 </head>
 <body>
-    <ul>
-        <li><a href="MainPage.html">Home Page</a></li>
-        <li><a href="About_Me.html">About Me</a></li>
-        <li><a href="#">Resume</a></li>
+    <ul class="navbar">
+        <li class="navlinks"><a href="MainPage.html">Home Page</a></li>
+        <li class="navlinks"><a href="About_Me.html">About Me</a></li>
+        <li class="navlinks"><a href="#">Resume</a></li>
     </ul>
     
     <h1>My Projects</h1>
   <article>
     <h2>YouTube Data API Full Stack Application</h2>
-    <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
-    <button href="https://github.com/karuaan/Youtube-Data-API">Like</button>
+    <label><strong>Description: </strong></label>
+    <p>Application created using Youtube-Data-API to find the subscriber count of channels.</p>
+    <label><strong>Technologies Used: </strong></label>
+    <ol>
+        <li><strong>Python3</strong> (Backend API for ETL Process)</li>
+        <li><strong>AWS Lambda</strong> (Run the code using a Lambda Function in AWS using Console)</li>
+        <li><strong>AWS S3</strong> (Stored Feeds into the S3 Bucket through code)</li>
+        <li><strong>NodeJS</strong> (Backend Web Interface to get data from S3 Bucket)</li>
+        <li><strong>ReactJS</strong> (Frontend Dashboard to present data pulled from S3 Bucket)</li>
+        <br>
+    </ol>
+    <a href="https://github.com/karuaan/Youtube-Data-API" class="button">Github</a>
   </article>
   <br>
   <article>
-    <h2>Sartorial synth Echo Park, roof party</h2>
-    <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
-    <button>Like</button>
-  </article>
-  <br>
-  <article>
-    <h2>Forage food truck keytar master cleanse</h2>
-    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
-    <button>Like</button>
+    <h2>My Profile</h2>
+    <label><strong>Description: </strong></label>
+    <p>Homemade Website to send to companies and recruiters.</p>
+    <label><strong>Technologies Used: </strong></label>
+    <ol>
+        <li><strong>HTML</strong> (Used to create basic structre of the website)</li>
+        <li><strong>CSS</strong> (Used to design the website)</li>
+        <li><strong>Javascript</strong> (Used to make automatica emailing feature for website)</li>
+        <br>
+    </ol>
+    <a href="https://github.com/karuaan/MyProfile" class="button">Github</a>
   </article>
   <br>
 </body>
